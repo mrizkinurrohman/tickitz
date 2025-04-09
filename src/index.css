@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: hsla(224, 76%, 48%, 1);
+    --color-secondary: hsla(234, 18%, 68%, 1);
+    --color-bg-icon: hsla(224, 76%, 48%, 0.2);
+    --color-colornav: hsla(222, 47%, 11%, 1);
+}
+
+@layer base {
+    #root {
+        font-family: "Mulish", serif;
+    }
+
+    input {
+        border: 1px solid black;
+        border-radius: 0.2rem;
+        padding: 0.3rem 1rem;
+    }
+
+    button {
+        padding: 0.3rem;
+        /* background: hsla(224, 76%, 48%, 1); */
+        width: 100%;
+        border-radius: 0.3rem;
+        color: white;
+    }
+}
+
+@layer components {
+    .seat {
+        @apply flex items-center justify-center p-4 bg-gray-300 rounded-lg hover:bg-primary;
+    }
+    .seats::-webkit-scrollbar {
+        display: none;
+    }
+}
