@@ -60,12 +60,12 @@ function DataMovieUpComing() {
                                 />
                                 <div className="group-hover:bg-black group-hover:opacity-65 inset-0 absolute z-8 flex flex-col justify-center items-center gap-2 rounded-lg p-4 hover:rounded-lg">
                                     <Link to={`/movie/detail/${movie.id}`}>
-                                        <button className="p-1 md:p-3 hover:bg-blue-600 opacity-100 border-1 border-white w-60">
+                                        <button className="p-1 md:p-3 hover:bg-blue-600 opacity-100 border-1 border-white w-40 md:w-60">
                                             Details
                                         </button>
                                     </Link>
                                     <Link to={`/movie/orderseat/${movie.id}`}>
-                                        <button className="p-1 md:p-3 hover:bg-blue-600 border-1 border-white w-60">
+                                        <button className="p-1 md:p-3 hover:bg-blue-600 border-1 border-white w-40 md:w-60">
                                             Buy Ticket
                                         </button>
                                     </Link>
